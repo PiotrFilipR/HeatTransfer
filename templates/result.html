@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='heattransfer.css') }}">
+        <title>HeatTransfer - Results</title>
+    </head>
+   <body>
+      <center>
+        <br>
+        <br>
+        <div>
+         <img src="{{url_for('static', filename='success.gif')}}" alt="Success" width="256" height="256" />
+        </div>
+        <div>
+            <h1>Calculated heating output: </h1>
+            <h2>{{ thermal_output }} [W/m²] </h2>
+        </div>
+        <br>
+        <br>
+        <form  action = "/result" method = "POST">
+            <div>
+                <p style="text-align:center"><input type = "submit" value = "Back to main page" /></p>
+            </div>
+        </form>
+    </center>
+   </body>
+</html>

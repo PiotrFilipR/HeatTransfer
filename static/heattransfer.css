@@ -1,0 +1,23 @@
+body {
+  background-color:#ffd699;
+}
+p{
+  font-size:20px;
+  font-family:verdana;
+  text-align:right;
+}
+input{
+  height:30px;
+  font-size:20px;
+  text-align:center;
+}
+
+select{
+  height:30px;
+  font-size:20px;
+  text-align:center;
+}
+  * p {
+    font-family: verdana;
+    font-size: 20px;
+  } *
